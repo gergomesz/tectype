@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tectype</title>
+<meta name="description" content="Learn Earth's history by typing it: eons, eras, periods, supercontinents, ice ages and fossils, with a globe for every chapter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="logo-sea" cx="35%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#7cc0ff"/><stop offset="0.55" stop-color="#2f7fe6"/><stop offset="1" stop-color="#0d3a8a"/>
+    </radialGradient>
+    <symbol id="logo-earth" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="14" fill="url(#logo-sea)"/>
+      <path d="M8.5 9.5c2.2-1.6 5-1.3 6.2.3 1 1.3-.4 2.4.6 3.6 1 1.1 3 .3 3.4 1.8.4 1.4-1.4 2.4-1.2 4 .2 1.4-1.2 2.6-2.6 2-1.6-.7-1.2-2.7-2.4-3.6-1.2-.9-3-.4-3.9-1.6-1-1.3-.1-2.7-1-3.9-.6-.9.3-2 .9-2.6z" fill="#5fbf6a"/>
+      <path d="M21.5 7.8c1.4.2 3 1.4 3.6 2.6.5 1-.6 1.6-1.6 1.4-1.2-.2-1.8-1.3-2.5-2.1-.5-.6-.3-1.9.5-1.9zM22.6 18.4c1.2-.4 2.6.4 2.6 1.6 0 1.4-1.2 3-2.6 3.2-1 .2-1.4-.9-1.2-1.8.2-1.1.2-2.6 1.2-3z" fill="#5fbf6a"/>
+      <circle cx="16" cy="16" r="14" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#" data-home aria-label="Tectype home">
+      <svg class="brand-logo" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><clipPath id="logo-clip"><circle cx="16" cy="16" r="14"/></clipPath></defs>
+        <circle cx="16" cy="16" r="14" fill="url(#logo-sea)"/>
+        <g clip-path="url(#logo-clip)">
+          <g class="logo-land" fill="#5fbf6a">
+            <path d="M8.5 9.5c2.2-1.6 5-1.3 6.2.3 1 1.3-.4 2.4.6 3.6 1 1.1 3 .3 3.4 1.8.4 1.4-1.4 2.4-1.2 4 .2 1.4-1.2 2.6-2.6 2-1.6-.7-1.2-2.7-2.4-3.6-1.2-.9-3-.4-3.9-1.6-1-1.3-.1-2.7-1-3.9-.6-.9.3-2 .9-2.6z"/>
+            <path d="M21.5 7.8c1.4.2 3 1.4 3.6 2.6.5 1-.6 1.6-1.6 1.4-1.2-.2-1.8-1.3-2.5-2.1-.5-.6-.3-1.9.5-1.9zM22.6 18.4c1.2-.4 2.6.4 2.6 1.6 0 1.4-1.2 3-2.6 3.2-1 .2-1.4-.9-1.2-1.8.2-1.1.2-2.6 1.2-3z"/>
+            <g transform="translate(28 0)">
+              <path d="M8.5 9.5c2.2-1.6 5-1.3 6.2.3 1 1.3-.4 2.4.6 3.6 1 1.1 3 .3 3.4 1.8.4 1.4-1.4 2.4-1.2 4 .2 1.4-1.2 2.6-2.6 2-1.6-.7-1.2-2.7-2.4-3.6-1.2-.9-3-.4-3.9-1.6-1-1.3-.1-2.7-1-3.9-.6-.9.3-2 .9-2.6z"/>
+              <path d="M21.5 7.8c1.4.2 3 1.4 3.6 2.6.5 1-.6 1.6-1.6 1.4-1.2-.2-1.8-1.3-2.5-2.1-.5-.6-.3-1.9.5-1.9zM22.6 18.4c1.2-.4 2.6.4 2.6 1.6 0 1.4-1.2 3-2.6 3.2-1 .2-1.4-.9-1.2-1.8.2-1.1.2-2.6 1.2-3z"/>
+            </g>
+          </g>
+        </g>
+        <circle cx="16" cy="16" r="14" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+      </svg>
+      <span>Tectype</span>
+    </a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#timeline">Timeline</a>
+      <a href="#ice-ages">Ice ages</a>
+      <a href="#fossils">Fossils</a>
+      <a href="#dating">Dating</a>
+      <a href="#scores">Scores</a>
+      <a href="#play" class="nav-play">Play</a>
+    </nav>
+    <a class="overall" href="#scores" id="overall" aria-label="Overall mastery">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle class="ring-bg" cx="18" cy="18" r="15"/><circle class="ring-fg" id="overall-ring" cx="18" cy="18" r="15"/></svg>
+      <span id="overall-pct">0%</span>
+    </a>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></svg>
+    </button>
+  </div>
+</header>
+
+<main id="view-home" class="view">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <span class="pill"><span class="dot" aria-hidden="true"></span><span id="pill-text">Hadean → Permian</span></span>
+      <h1 class="hero-title"><span class="accent">Tec</span>type</h1>
+      <p class="hero-lede"><strong>Learn Earth’s history by typing it.</strong> A globe for every chapter, fossils to name on sight, three short rounds per level, and a new event of the day.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#play">Play <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#today">Event of the day</a>
+      </div>
+      <div class="hero-links">
+        <a class="chip-link" href="#timeline">Explore the timeline</a>
+        <a class="chip-link" href="#ice-ages">Why ice ages happen</a>
+        <a class="chip-link" href="#supercontinents">Supercontinent cycle</a>
+        <a class="chip-link" href="#fossils">Fossils</a>
+        <a class="chip-link" href="#dating">How rocks are dated</a>
+      </div>
+    </div>
+    <div class="hero-globe">
+      <canvas id="hero-globe" class="globe" aria-label="Rotating globe showing Earth at different times"></canvas>
+      <div class="demo" aria-live="off">
+        <div class="demo-round"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="demo-round">ROUND 1 · TYPE IT</span></div>
+        <div class="demo-word"><span id="demo-word">Rodinia</span><span class="tick" id="demo-tick" aria-hidden="true">✓</span></div>
+        <div class="demo-age" id="demo-age">1.1 Ga</div>
+      </div>
+    </div>
+  </section>
+  <a class="scroll-hint" href="#how">Scroll to see how it plays <span class="mouse" aria-hidden="true"></span></a>
+
+  <section id="how" class="section wrap">
+    <h2 class="h2">Three rounds per level</h2>
+    <p class="lead">Every level is a handful of names from the lectures. You meet each name three times, with less help each round.</p>
+    <ol class="rounds">
+      <li><span class="r-num">Round 1 · Type it</span><p>The name is on screen. Type over it to learn the spelling, and read why it matters.</p></li>
+      <li><span class="r-num">Round 2 · First letter</span><p>Only the first letter and a clue: the date and what happened. Recall the rest.</p></li>
+      <li><span class="r-num">Round 3 · From memory</span><p>No letters, no caption on the globe. Just the clue. Press Enter if you are stuck and it comes back later.</p></li>
+    </ol>
+  </section>
+
+  <section id="timeline" class="section wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="h2">The timescale</h2>
+        <p class="lead">Drag along the chart or use the arrow keys. The globe shows what Earth looked like at that moment, and the list shows what was happening.</p>
+      </div>
+      <div class="seg" role="group" aria-label="Chart scale">
+        <button type="button" id="scale-expanded" class="on" aria-pressed="true">Readable</button>
+        <button type="button" id="scale-true" aria-pressed="false">True scale</button>
+      </div>
+    </div>
+    <div class="tl-scroll" id="tl-scroll">
+      <div class="tl" id="tl" tabindex="0" role="slider" aria-label="Time" aria-valuemin="0" aria-valuemax="4600" aria-valuenow="1100">
+        <div class="tl-rows" id="tl-rows"></div>
+        <div class="tl-cursor" id="tl-cursor"><span id="tl-cursor-label">1.1 Ga</span></div>
+      </div>
+    </div>
+    <div class="tl-jump" id="tl-jump" aria-label="Jump to"></div>
+
+    <div class="tl-detail">
+      <div class="tl-globe-wrap">
+        <canvas id="tl-globe" class="globe" aria-label="Globe for the selected time"></canvas>
+        <p class="globe-note">Schematic: shapes show the idea, not exact coastlines. Drag to spin.</p>
+      </div>
+      <div class="tl-info">
+        <div class="crumbs" id="tl-crumbs"></div>
+        <h3 class="tl-name"><span id="tl-name">Mesoproterozoic</span> <span class="tl-span" id="tl-span"></span></h3>
+        <div class="look">
+          <div class="look-label">What Earth looked like · <span id="tl-scene-name"></span></div>
+          <p id="tl-look"></p>
+        </div>
+        <p class="tl-blurb" id="tl-blurb"></p>
+        <h4 class="h4">Happening around this time</h4>
+        <ul class="events" id="tl-events"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ice-ages" class="section wrap">
+    <h2 class="h2">Why ice ages happen</h2>
+    <p class="lead">Earth cools when less heat is trapped or more sunlight is reflected. Earth has frozen at least eight times, and each glaciation had its own mix of causes. Pick a cause or an ice age to see how they connect.</p>
+
+    <div class="ice-grid">
+      <div class="loop-card">
+        <h3 class="h3">The albedo feedback loop</h3>
+        <svg class="loop" viewBox="0 0 300 250" role="img" aria-label="Albedo loop: more ice, more sunlight reflected, less heat absorbed, colder, more ice">
+          <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker></defs>
+          <g class="loop-ring">
+            <path d="M150 38 A92 92 0 0 1 238 120" marker-end="url(#arr)"/>
+            <path d="M238 140 A92 92 0 0 1 160 222" marker-end="url(#arr)"/>
+            <path d="M140 222 A92 92 0 0 1 62 140" marker-end="url(#arr)"/>
+            <path d="M62 120 A92 92 0 0 1 140 38" marker-end="url(#arr)"/>
+          </g>
+          <g class="loop-node"><rect x="95" y="14" width="110" height="34" rx="17"/><text x="150" y="36">More ice</text></g>
+          <g class="loop-node"><rect x="186" y="113" width="110" height="34" rx="17"/><text x="241" y="135">More reflected</text></g>
+          <g class="loop-node"><rect x="95" y="208" width="110" height="34" rx="17"/><text x="150" y="230">Less heat in</text></g>
+          <g class="loop-node"><rect x="4" y="113" width="110" height="34" rx="17"/><text x="59" y="135">Colder</text></g>
+          <text class="loop-mid" x="150" y="126">positive</text><text class="loop-mid" x="150" y="142">feedback</text>
+        </svg>
+        <p class="small">Once ice starts to build, it speeds up its own growth. That is how the Cryogenian ice reached the equator.</p>
+      </div>
+      <div class="cause-card">
+        <h3 class="h3">Causes</h3>
+        <ul class="causes" id="causes"></ul>
+      </div>
+    </div>
+    <div class="glac-row" id="glaciations"></div>
+    <div class="glac-detail" id="glac-detail" aria-live="polite"></div>
+  </section>
+
+  <section id="supercontinents" class="section wrap">
+    <h2 class="h2">The supercontinent cycle</h2>
+    <p class="lead">Continents gather, insulate the mantle beneath them, then rift apart above superplumes. One full Wilson cycle takes a few hundred million years.</p>
+    <ol class="wilson">
+      <li><b>Superplume</b><span>Heat builds at the core–mantle boundary under the insulating supercontinent.</span></li>
+      <li><b>Rifting</b><span>Rift valleys form along triple junctions.</span></li>
+      <li><b>New ocean</b><span>Sea-floor spreading opens an ocean with passive margins.</span></li>
+      <li><b>Subduction</b><span>Old ocean crust breaks off and sinks; the ocean starts to close.</span></li>
+      <li><b>Collision</b><span>Arcs, terranes and continents collide in orogenies.</span></li>
+      <li><b>New supercontinent</b><span>The pieces reassemble, and the cycle repeats.</span></li>
+    </ol>
+    <div class="sc-row" id="sc-row"></div>
+  </section>
+
+  <section id="fossils" class="section wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="h2">Fossils</h2>
+        <p class="lead">What each one looks like, when it first shows up and when it disappears. The bar runs from 600 Ma to today.</p>
+      </div>
+      <a class="btn btn-ghost btn-sm sec-btn" href="#level-fossils-sea">Name them on sight <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="fossil-grid" id="fossil-grid"></div>
+  </section>
+
+  <section id="dating" class="section wrap">
+    <h2 class="h2">How rocks are dated</h2>
+    <p class="lead">Relative dating puts layers in order. Absolute dating gives a number: tree rings, paleomagnetism, index fossils and, for old rocks, radioactive decay inside minerals such as zircon.</p>
+    <div class="dating">
+      <div class="decay-card">
+        <div class="decay-top">
+          <label for="iso-select" class="look-label">Isotope</label>
+          <select id="iso-select"></select>
+        </div>
+        <div class="atoms" id="atoms" aria-hidden="true"></div>
+        <label for="hl-range" class="look-label">Half-lives passed: <b id="hl-n">1</b></label>
+        <input id="hl-range" type="range" min="0" max="5" step="1" value="1">
+        <p class="decay-out" id="decay-out"></p>
+      </div>
+      <div class="iso-table-wrap">
+        <table class="iso-table">
+          <thead><tr><th>Parent</th><th>Daughter</th><th>Half-life</th><th>Range</th><th>Minerals</th></tr></thead>
+          <tbody id="iso-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main id="view-play" class="view wrap" hidden>
+  <div class="play-head">
+    <h1 class="h1">Choose a level</h1>
+    <p class="lead">Ordered like the lectures, from the oldest rocks to Pangea. Stars and your best percentage come from Round 3.</p>
+    <div class="play-overall" id="play-overall"></div>
+  </div>
+  <a class="today-card" href="#today" id="today-card"></a>
+  <div class="levels" id="levels"></div>
+</main>
+
+<main id="view-game" class="view wrap" hidden>
+  <div class="game">
+    <div class="game-globe">
+      <canvas id="game-globe" class="globe" aria-label="Globe for this item"></canvas>
+      <div class="fossil-frame" id="game-fossil" hidden></div>
+      <div class="game-caption" id="game-caption"></div>
+    </div>
+    <div class="game-panel" id="game-panel">
+      <div class="game-top">
+        <a class="back" href="#play">← Levels</a>
+        <span class="game-level" id="game-level"></span>
+      </div>
+
+      <div id="g-intro" class="g-screen">
+        <div class="eyebrow" id="g-intro-eyebrow">Level</div>
+        <h2 class="g-title" id="g-intro-title"></h2>
+        <p class="lead" id="g-intro-sub"></p>
+        <ul class="g-preview" id="g-intro-list"></ul>
+        <button class="btn btn-primary" type="button" id="g-start">Start <span aria-hidden="true">→</span></button>
+      </div>
+
+      <div id="g-round" class="g-screen" hidden>
+        <div class="round-label"><span class="bars" id="g-bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="g-round-name">ROUND 1 · TYPE IT</span></div>
+        <div class="progress" id="g-progress" aria-hidden="true"></div>
+        <p class="clue" id="g-clue"></p>
+        <div class="type-box" id="g-typebox">
+          <div class="type-display" id="g-display" aria-hidden="true"></div>
+          <input id="g-input" class="type-input" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type the name">
+        </div>
+        <div class="g-hint" id="g-hint">Type the name. Press Enter if you don’t know it.</div>
+        <div class="fact" id="g-fact" hidden></div>
+        <div class="g-actions">
+          <button type="button" class="btn btn-ghost btn-sm" id="g-reveal">Show answer</button>
+          <button type="button" class="btn btn-primary btn-sm" id="g-next" hidden>Next <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+
+      <div id="g-between" class="g-screen" hidden>
+        <div class="eyebrow" id="g-between-eyebrow">Next</div>
+        <h2 class="g-title" id="g-between-title"></h2>
+        <p class="lead" id="g-between-sub"></p>
+        <button class="btn btn-primary" type="button" id="g-continue">Continue <span aria-hidden="true">→</span></button>
+      </div>
+
+      <div id="g-done" class="g-screen" hidden>
+        <div class="eyebrow">Level complete</div>
+        <h2 class="g-title" id="g-done-title"></h2>
+        <div class="stars" id="g-stars" aria-label=""></div>
+        <p class="g-score" id="g-score"></p>
+        <dl class="stats" id="g-stats"></dl>
+        <ul class="missed" id="g-missed"></ul>
+        <div class="g-actions">
+          <button class="btn btn-primary" type="button" id="g-nextlevel">Next level <span aria-hidden="true">→</span></button>
+          <button class="btn btn-ghost" type="button" id="g-replay">Play again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<main id="view-scores" class="view wrap" hidden>
+  <div class="play-head">
+    <h1 class="h1">Your scores</h1>
+    <p class="lead">Your best runs and how much of the course you have locked in. Saved in this browser.</p>
+  </div>
+  <div class="score-top">
+    <div class="big-ring">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle class="ring-bg" cx="18" cy="18" r="15"/><circle class="ring-fg" id="big-ring" cx="18" cy="18" r="15"/></svg>
+      <div class="big-ring-txt"><b id="big-pct">0%</b><span>overall</span></div>
+    </div>
+    <dl class="stats score-stats" id="sc-stats"></dl>
+  </div>
+  <h2 class="h3 sc-h">Top runs</h2>
+  <div class="iso-table-wrap">
+    <table class="iso-table score-table">
+      <thead><tr><th>#</th><th>Level</th><th>Score</th><th>Accuracy</th><th>Time</th><th>Date</th></tr></thead>
+      <tbody id="runs-body"></tbody>
+    </table>
+  </div>
+  <h2 class="h3 sc-h">Best per level</h2>
+  <div class="best-grid" id="best-levels"></div>
+  <div class="reset-row">
+    <button type="button" class="btn btn-ghost btn-sm" id="reset-btn">Reset scores</button>
+    <span class="reset-confirm" id="reset-confirm" hidden>Delete every score on this device?
+      <button type="button" class="btn btn-sm danger" id="reset-yes">Delete</button>
+      <button type="button" class="btn btn-ghost btn-sm" id="reset-no">Keep</button>
+    </span>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <span>© 2026 <span class="foot-name">Gergo Meszaros</span></span>
+    <span class="foot-note">Content follows EESB15 Earth History, Lectures 12–18. Colours from the ICS chronostratigraphic chart. Globes and fossil drawings are schematic.</span>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/globe.js"></script>
+<script src="assets/js/fossils.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
